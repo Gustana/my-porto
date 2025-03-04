@@ -45,6 +45,6 @@ body{
     content: "";
 }
 
-footer>i{
+footer>div>i{
     cursor: pointer;
 }
