@@ -11,10 +11,10 @@
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
 </head>
-<body class="bg-dark text-white">
+<body class="bg-dark text-white" data-bs-smooth-scrolling="true">
     <nav class="navbar navbar-expand-lg bg-dark-subtle fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#cover">
                 <img src="asset/my logo.png" alt="Logo" id="logo" class="img-fluid">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,16 +22,16 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Cover</a>
-                    <a class="nav-link" href="#">Projects</a>
-                    <a class="nav-link" href="#">Experiences</a>
-                    <a class="nav-link" href="#">Articles</a>
+                    <a class="nav-link active" aria-current="page" href="#cover">Cover</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#experiences">Experiences</a>
+                    <a class="nav-link" href="#articles">Articles</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="container-fluid vh-100">
+    <section class="container-fluid vh-100" id="cover">
         <div class="row h-100">
             <div class="col-lg-7 d-flex align-items-center justify-content-end">
                 <img src="asset/img-front.webp" alt="My Profile" id="my_picture">
@@ -44,9 +44,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container pt-3" id="container-projects">
+    <section class="container mt-3" id="projects">
         <p class="h2 mb-3">Projects</p>
         <div class="row">
             <div class="col-lg-4">
@@ -84,7 +84,8 @@
             <div class="col-lg-4">
                 <div class="card">
                     <div class="card-body">
-                        <p class="h5 card-title">Credit Score Classification</p>
+                        <img src="https://plus.unsplash.com/premium_photo-1674941294725-97e4737d1836?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YmVhdXR5JTIwcHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D" alt="Beauty Product Illustration" class="card-img-top img-fluid">
+                        <p class="h5 card-title">Beauty Products Sentiment Analysis</p>
                         <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                         <a href="#" class="btn btn-primary">Check it out!</a>
                     </div>
@@ -93,24 +94,24 @@
             <div class="col-lg-4"></div>
             <div class="col-lg-4"></div>
         </div>
-    </div>
+    </section>
 
-    <div class="container pt-5" id="container-experiences">
+    <section class="container mt-5" id="experiences">
         <p class="h2 mb-3">Experiences</p>
         <section>
             <ul class="timeline">
                 <li class="timeline-item mb-5">
-                    <p class="h5 fw-bold">Lorem ipsum</p>
-                    <p class="text-white mb-2">March 2024</p>
+                    <p class="h5 fw-bold">Data Scientist Intern</p>
+                    <p class="text-white mb-2">Oct, 2024 - Present</p>
                     <p class="text-white">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, repellat voluptas fugit, voluptate tempora itaque excepturi iusto perferendis in ipsam quae ducimus praesentium. Perferendis, pariatur totam. Eos voluptatibus nulla quaerat.
                     </p>
                 </li>
             </ul>
         </section>
-    </div>
+    </section>
 
-    <div class="container pt-5" id="container-articles">
+    <section class="container my-5" id="articles">
         <p class="h2 mb-3">Articles</p>
         <div class="row">
             <div class="col-lg-4">
@@ -141,14 +142,18 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="container pt-5" id="footer-container">
-        <footer class="d-flex justify-content-center">
-            <i class="fa-brands fa-github fa-xl me-2" onclick="window.open('https://www.github.com/gustana', '_blank')"></i>
-            <i class="fa-brands fa-linkedin fa-xl me-2" onclick="window.open('https://www.linkedin.com/in/gustana', '_blank')"></i>
-            <i class="fa-brands fa-medium fa-xl" onclick="window.open('https://www.medium.com/@gustana9', '_blank')"></i>
-        </footer>
+    </section>
+    <div class="bg-black">
+        <div class="container pt-4" id="footer-container">
+            <footer>
+                <div class="d-flex justify-content-center mb-4">
+                    <i class="fa-brands fa-github fa-xl me-2" onclick="window.open('https://www.github.com/gustana', '_blank')"></i>
+                    <i class="fa-brands fa-linkedin fa-xl me-2" onclick="window.open('https://www.linkedin.com/in/gustana', '_blank')"></i>
+                    <i class="fa-brands fa-medium fa-xl" onclick="window.open('https://www.medium.com/@gustana9', '_blank')"></i>
+                </div>
+                <p class="mb-0 text-center">made with ❤️ by myself</p>
+            </footer>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ac3d771995.js" crossorigin="anonymous"></script>
