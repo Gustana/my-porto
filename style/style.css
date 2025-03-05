@@ -24,6 +24,11 @@ body{
     max-height: 250px;
 }
 
+.card-projects>.card-body>.card-text{
+    height: 120px;
+    text-align: justify;
+}
+
 .timeline {
     border-left: 1px solid hsl(330, 69%, 55%);
     position: relative;
