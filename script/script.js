@@ -29,4 +29,22 @@ document.addEventListener("DOMContentLoaded", ()=>{
             }
         })
     })
+
+    const navbar = document.querySelector(".navbar")
+    let lastScrollTop = 0
+    const scrollFadeThreshold = 100;
+
+    window.addEventListener("scroll", () => {
+        const currentScrollTop = window.scrollY
+        
+        if(currentScrollTop > lastScrollTop && currentScrollTop > scrollFadeThreshold){
+            navbar.style.transform = "translateY(-100%)"
+            navbar.style.opacity = '0'
+        }else{
+            navbar.style.transform = "translateY(0)"
+            navbar.style.opacity = '1'
+        }
+
+        lastScrollTop = currentScrollTop
+    })
 })
