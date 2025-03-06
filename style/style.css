@@ -13,19 +13,28 @@ body{
 
 #logo{
     max-width: 30px;
+    height: auto;
 }
 
-#my_picture{
-    width: 70%;
+#responsive-my-picture{
+    max-width: 65%;
+    height: auto;
+}
+
+@media(min-width: 768px){
+    #responsive-my-picture{
+        width: 70%;
+        height: auto;
+    }
 }
 
 .card-body>img{
     object-fit: cover;
-    max-height: 250px;
+    height: 250px;
 }
 
 .card-projects>.card-body>.card-text{
-    height: 120px;
+    height: 150px;
     text-align: justify;
 }
 

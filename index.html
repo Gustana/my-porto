@@ -23,7 +23,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" href="#cover">Cover</a>
                     <a class="nav-link" href="#experiences">Experiences</a>
                     <a class="nav-link" href="#projects">Projects</a>
                     <a class="nav-link" href="#articles">Articles</a>
@@ -34,11 +33,11 @@
 
     <section class="container-fluid vh-100" id="cover">
         <div class="row h-100">
-            <div class="col-lg-7 d-flex align-items-center justify-content-end">
-                <img src="asset/img-front.webp" alt="My Profile" id="my_picture">
+            <div class="col-md-7 d-flex align-items-sm-end align-items-md-center justify-content-md-end justify-content-center mb-3 mb-md-0">
+                <img src="asset/img-front.webp" alt="My Profile" id="responsive-my-picture">
             </div>
-            <div class="col-lg-5 d-flex align-items-center">
-                <div class="flex-column">
+            <div class="col-md-5 d-flex align-items-md-center justify-content-md-start justify-content-center">
+                <div class="flex-column d-flex">
                     <p class="h3">Gustana Satiawan</p>
                     <p>Data Scientist | Data Engineer</p>
                     <button type="button" class="btn btn-outline-warning" onclick="window.location.href='mailto:work.liarta@gmail.com'">Reach Out!</button>
@@ -54,9 +53,12 @@
                 <li class="timeline-item mb-5">
                     <p class="h5 fw-bold">Data Scientist Intern</p>
                     <p class="fw-light">BFI Indonesia | Oct, 2024 - Present</p>
-                    <p class="text-white">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, repellat voluptas fugit, voluptate tempora itaque excepturi iusto perferendis in ipsam quae ducimus praesentium. Perferendis, pariatur totam. Eos voluptatibus nulla quaerat.
-                    </p>
+                    <ul>
+                        <li>Cleaned and wrangled large and dirty datasets to improve data quality for analysis, ensuring accuracyand efficiency.</li>
+                        <li>Collaborated with Data Science and Digital Partnership teams to develop a forecasting model for
+                            customer payout ratios, reducing the existing model’s error by 25%.</li>
+                        <li>Presented SHAP-based feature impact analysis to stakeholders, improving model interpretabilityandbusiness decision-making.</li>
+                    </ul>
                 </li>
                 <li class="timeline-item mb-5">
                     <p class="h5 fw-bold">Assistant Lecturer in Data Structure and Algorithms</p>
@@ -74,7 +76,7 @@
     <section class="container mt-3" id="projects">
         <p class="h2 mb-3">Projects</p>
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 mb-3 mb-lg-0">
                 <div class="card card-projects">
                     <div class="card-body">
                         <img src="https://images.unsplash.com/photo-1576767969134-4318b9bd84a5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2F0ZWxsaXRlJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="Satellite Image Illustration" class="card-img-top img-fluid">
@@ -86,7 +88,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 mb-3 mb-lg-0">
                 <div class="card card-projects">
                     <div class="card-body">
                         <img src="https://images.unsplash.com/photo-1504279807002-09854ccc9b6c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FtYmxpbmd8ZW58MHx8MHx8fDA%3D" alt="Gambling Illustration" class="card-img-top img-fluid">
@@ -98,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 mb-3 mb-lg-0">
                 <div class="card card-projects">
                     <div class="card-body">
                         <img src="https://plus.unsplash.com/premium_photo-1661777727229-be559373a742?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y3JlZGl0JTIwc2NvcmV8ZW58MHx8MHx8fDA%3D" alt="Credit Illustration" class="card-img-top img-fluid">
@@ -111,8 +113,8 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-3">
-            <div class="col-lg-4">
+        <div class="row mt-lg-3">
+            <div class="col-lg-4 mb-3 mb-lg-0">
                 <div class="card card-projects">
                     <div class="card-body">
                         <img src="https://plus.unsplash.com/premium_photo-1674941294725-97e4737d1836?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YmVhdXR5JTIwcHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D" alt="Beauty Product Illustration" class="card-img-top img-fluid">
@@ -161,17 +163,16 @@
             </div>
         </div>
     </section>
-    <div class="bg-black">
-        <div class="container pt-4" id="footer-container">
-            <footer>
-                <div class="d-flex justify-content-center mb-4">
-                    <i class="fa-brands fa-github fa-xl me-2" title="github" onclick="window.open('https://www.github.com/gustana', '_blank')"></i>
-                    <i class="fa-brands fa-linkedin fa-xl me-2" title="linkedin" onclick="window.open('https://www.linkedin.com/in/gustana', '_blank')"></i>
-                    <i class="fa-brands fa-medium fa-xl" title="medium" onclick="window.open('https://www.medium.com/@gustana9', '_blank')"></i>
-                </div>
-                <p class="mb-0 text-center">made with ❤️ by myself</p>
-            </footer>
-        </div>
+    
+    <div class="container-fluid bg-black pt-4" id="footer-container">
+        <footer>
+            <div class="d-flex justify-content-center mb-4">
+                <i class="fa-brands fa-github fa-xl me-2" title="github" onclick="window.open('https://www.github.com/gustana', '_blank')"></i>
+                <i class="fa-brands fa-linkedin fa-xl me-2" title="linkedin" onclick="window.open('https://www.linkedin.com/in/gustana', '_blank')"></i>
+                <i class="fa-brands fa-medium fa-xl" title="medium" onclick="window.open('https://www.medium.com/@gustana9', '_blank')"></i>
+            </div>
+            <p class="mb-0 text-center">made with ❤️ by myself</p>
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ac3d771995.js" crossorigin="anonymous"></script>
