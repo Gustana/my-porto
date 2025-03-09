@@ -47,4 +47,19 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
         lastScrollTop = currentScrollTop
     })
+
+    project_link_maps = {
+        "btn-show-project-satellite-img-cls": "https://huggingface.co/spaces/gustana/Satellite-Imagery-Classification",
+        "btn-show-project-credit-score": "https://huggingface.co/spaces/gustana/Credit-Score-Analysis"
+    }
+
+    $(`#btn-show-project-satellite-img-cls,
+        #btn-show-project-credit-score`
+    ).on("click", (e)=>{
+        clickedBtnId = e.target.id
+        targetedLink = project_link_maps[clickedBtnId]
+
+        $("#btn-project-redirect").attr("href", targetedLink)
+        $("#project-detail-modal").modal("show")
+    })
 })
